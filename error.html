@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Track Not Found</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #121212;
+            color: white;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .broken-disc {
+            font-size: 120px;
+            display: inline-block; /* Ensures the spin animation rotates perfectly on center */
+            animation: spin 8s linear infinite;
+        }
+
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        h1 {
+            font-size: clamp(60px, 10vw, 90px); /* Responsive sizing */
+            margin: 10px 0;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 40px; /* Replaced <br> with clean CSS spacing */
+            color: #b3b3b3;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            padding: 12px 30px;
+            border: 2px solid #ff3333; /* Slightly brighter red for better contrast */
+            border-radius: 30px;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+
+        a:hover {
+            background: #ff3333;
+            box-shadow: 0 0 15px rgba(255, 51, 51, 0.4); /* Subtle glow effect */
+        }
+    </style>
+</head>
+<body class="error-page">
+
+<div class="container">
+    <div class="broken-disc">💿</div>
+    <h1>404</h1>
+    <p><i>Looks like this track is gone.</i></p>
+    <nav>
+        <a href="index.html">Go Back 🏡H♡me</a>
+    </nav>
+</div>
+
+</body>
+</html>

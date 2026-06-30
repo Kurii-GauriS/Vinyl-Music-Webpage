@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+    Welcome to my collection.
+</title>
+</head>
+    <style>
+        body {
+            margin: 0;
+            text-align: center;
+            padding-top: 50px;
+            color: rgb(184, 21, 124);
+            /* Background image settings */
+             background: url('https://i.ytimg.com/vi/e94hCLHEEsk/maxresdefault.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        /* Semi-transparent overlay for readability */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: -1;
+        }
+
+.album-container{
+    display:flex;
+    grid-template-columns: repeat(auto-fit,6px, 4fr);
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:40px;
+    padding:50px;
+}
+.album-card{
+
+    width:240px;
+
+    background:rgba(255,255,255,.15);
+    backdrop-filter:blur(15px);
+    -webkit-backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,.2);
+
+    border-radius:18px;
+
+    padding:15px;
+
+    text-decoration:none;
+
+    color:white;
+
+    transition:.4s ease;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+}
+.album-card img{
+
+    width:100%;
+
+    height:250px;
+
+    object-fit:cover;
+
+    border-radius:12px;
+}
+.album-info{
+
+    margin-top:18px;
+}
+
+.album-info h3{
+
+    margin:0;
+    font-size:22px;
+}
+
+.album-info p{
+
+    color:#dcdcdc;
+
+    margin:10px 0;
+    line-height:1.5;
+}
+
+.album-info span{
+
+    font-size:14px;
+
+    color:#f5d5ff;
+}
+.album-card:hover{
+
+    transform:translateY(-10px) rotate(-2deg);
+
+    background:rgba(255,255,255,.22);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.35);
+}
+        .glass-btn {
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 30px;
+
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+    border: 1px solid rgb(0, 0, 0);
+
+    color: rgb(240, 197, 197);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+
+    cursor: pointer;
+
+    transition: all 0.35s ease;
+}
+
+.glass-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.15);
+}
+
+.glass-btn:active {
+    transform: scale(0.97);
+}
+
+    </style>
+    <body>
+    <h1 class="page-title">
+        <b><i>💿Welcome to my collection.💿</i></b></h1>
+    <div class="album-container">
+
+    <a href="comfort.html" class="album-card">
+
+        <img src="https://i.pinimg.com/736x/d0/84/8a/d0848a18fc2ad7af76d47a2cd3d52d83.jpg" alt="Comfort Songs">
+
+        <div class="album-info">
+            <h3>❤️C♡mf♡rt S♡ngs</h3>
+            <p>For the days I need a hug.</p>
+            <span>1O Songs</span>
+        </div>
+    </a>
+    </div>
+        <div class="album-container">
+            <a href="tpop.html" class="album-card">
+                <img src="https://i.pinimg.com/736x/86/69/c4/8669c461820b025f32cc3abbbe1c4134.jpg" alt="Tpop Songs">
+                <div class="album-info">
+                    <h3>🎤 T-Pop</h3>
+                    <p>Energetic beats and catchy choruses.</p>
+                    <span>14 Songs</span>
+                </div>    
+            </a>
+        </div>
+        <div class="album-container">
+            <a href="ost.html" class="album-card">
+                <img src="https://i.pinimg.com/736x/6b/4f/52/6b4f52ef6c1d17da5da5dc928d96980f.jpg" alt="Ost songs">
+                <div class="album-info">
+                    <h3>🎬 Thai OSTs</h3>
+                    <p>The songs behind unforgettable scenes.</p>
+                    <span>13 Songs</span>
+                </div>
+                </a>
+        </div>
+        <div class="album-container">
+            <a href="gmmtv.html" class="album-card">
+                <img src="https://i.pinimg.com/736x/78/9a/b9/789ab95e6c4d892f4855ad682a7f9af1.jpg" alt="Gmmtv songs">
+                <div class="album-info">
+                    <h3>❤︎GMMTV S♡ng</h3>
+                    <p>The songs behind unforgettable scenes.</p>
+                    <span>1O Songs</span>
+                </div>
+                </a>
+        </div>
+    <a href="index.html" class="glass-btn">🏡H♡me</a>
+    <a href="comfort.html" class="glass-btn">❤️C♡mf♡rt S♡ngs</a>
+    <a href="tpop.html" class="glass-btn">✨TP♡P S♡ng</a>
+    <a href="ost.html" class="glass-btn">💿ST S♡ng</a>
+    <a href="gmmtv.html" class="glass-btn">❤︎GMMTV S♡ng</a>
+</body>
+</html>

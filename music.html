@@ -31,12 +31,10 @@
         }
 .album-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 2fr));
+    grid-template-columns: repeat(2, 240px);
     gap: 40px;
-    justify-items: center;
+    justify-content: center;
     padding: 50px;
-    max-width: 700px;
-    margin: auto;
 }
 .album-card{
 
@@ -139,49 +137,45 @@
     <body>
     <h1 class="page-title">
         <b><i>💿Welcome to my collection.💿</i></b></h1>
-    <div class="album-container">
+<div class="album-container">
 
     <a href="comfort.html" class="album-card">
-
         <img src="https://i.pinimg.com/736x/d0/84/8a/d0848a18fc2ad7af76d47a2cd3d52d83.jpg" alt="Comfort Songs">
-
         <div class="album-info">
             <h3>❤️C♡mf♡rt S♡ngs</h3>
             <p>For the days I need a hug.</p>
-            <span>1O Songs</span>
+            <span>10 Songs</span>
         </div>
     </a>
-    </div>
-        <div class="album-container">
-            <a href="tpop.html" class="album-card">
-                <img src="https://i.pinimg.com/736x/86/69/c4/8669c461820b025f32cc3abbbe1c4134.jpg" alt="Tpop Songs">
-                <div class="album-info">
-                    <h3>🎤 T-Pop</h3>
-                    <p>Energetic beats and catchy choruses.</p>
-                    <span>14 Songs</span>
-                </div>    
-            </a>
+
+    <a href="tpop.html" class="album-card">
+        <img src="https://i.pinimg.com/736x/86/69/c4/8669c461820b025f32cc3abbbe1c4134.jpg" alt="Tpop Songs">
+        <div class="album-info">
+            <h3>🎤 T-Pop</h3>
+            <p>Energetic beats and catchy choruses.</p>
+            <span>14 Songs</span>
         </div>
-        <div class="album-container">
-            <a href="ost.html" class="album-card">
-                <img src="https://i.pinimg.com/736x/6b/4f/52/6b4f52ef6c1d17da5da5dc928d96980f.jpg" alt="Ost songs">
-                <div class="album-info">
-                    <h3>🎬 Thai OSTs</h3>
-                    <p>The songs behind unforgettable scenes.</p>
-                    <span>13 Songs</span>
-                </div>
-                </a>
+    </a>
+
+    <a href="ost.html" class="album-card">
+        <img src="https://i.pinimg.com/736x/6b/4f/52/6b4f52ef6c1d17da5da5dc928d96980f.jpg" alt="OST Songs">
+        <div class="album-info">
+            <h3>🎬 Thai OSTs</h3>
+            <p>The songs behind unforgettable scenes.</p>
+            <span>13 Songs</span>
         </div>
-        <div class="album-container">
-            <a href="gmmtv.html" class="album-card">
-                <img src="https://i.pinimg.com/736x/78/9a/b9/789ab95e6c4d892f4855ad682a7f9af1.jpg" alt="Gmmtv songs">
-                <div class="album-info">
-                    <h3>❤︎GMMTV S♡ng</h3>
-                    <p>The songs behind unforgettable scenes.</p>
-                    <span>1O Songs</span>
-                </div>
-                </a>
+    </a>
+
+    <a href="gmmtv.html" class="album-card">
+        <img src="https://i.pinimg.com/736x/78/9a/b9/789ab95e6c4d892f4855ad682a7f9af1.jpg" alt="GMMTV Songs">
+        <div class="album-info">
+            <h3>❤︎ GMMTV S♡ng</h3>
+            <p>The songs behind unforgettable scenes.</p>
+            <span>10 Songs</span>
         </div>
+    </a>
+
+</div>
         <script>
       window.addEventListener("offline", () => {
     window.location.href = "404.html";
